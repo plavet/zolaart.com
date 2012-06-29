@@ -120,12 +120,13 @@ ul.navigacija li a {
 }
 
 ul.navigacija li a:hover {
-	border-bottom:2px solid #4d484f;
-	font-weight:bold;font-size: 24px;
+	/*border-bottom:2px solid #4d484f;*/
+	font-weight:bold;
 }
 
 a.current {
-	border-bottom:2px solid #4d484f;
+	/*border-bottom:2px solid #4d484f;*/
+	font-weight:bold;
 }
 
 
@@ -148,7 +149,8 @@ ul.sub-nav li a {
 }
 
 ul.sub-nav li a:hover {
-	border-bottom:2px solid #4d484f;
+	/*border-bottom:2px solid #4d484f;*/
+	font-weight:bold;
 }
 
 
@@ -296,7 +298,8 @@ section.contact p a:hover {
 	*/
 }
 .ff-container label:hover {
-	border-bottom: 2px solid #8d8d8f;
+	/*border-bottom: 2px solid #8d8d8f;*/
+	font-weight:bold;
 }
 
 span.separator {
@@ -316,7 +319,8 @@ span.separator {
 .ff-container input.ff-selector-type-2:checked ~ label.ff-label-type-2,
 .ff-container input.ff-selector-type-3:checked ~ label.ff-label-type-3,
 .ff-container input.ff-selector-type-4:checked ~ label.ff-label-type-4{
-	border-bottom: 2px solid #8d8d8f;
+	/*border-bottom: 2px solid #8d8d8f;*/
+	font-weight:bold;
 	/*
 	background: #BDBDBD;
 	background: -moz-linear-gradient(top, #BDBDBD 0%, #4d484f 100%);
@@ -353,7 +357,7 @@ span.separator {
 	background: rgba(165, 165, 165, 0.6);
 	font-style: normal;
 	color: #fff;
-	font-weight: bold;
+	font-weight: normal;
 	padding: 20px 0 30px 0;
 	position: absolute;
 	bottom: 0;
@@ -427,7 +431,8 @@ footer a {
 }
 
 footer a:hover {
-	border-bottom:1px solid #8d8d8f;
+	/*border-bottom:1px solid #8d8d8f;*/
+	font-weight:bold;
 }
 
 footer span.pull-right {
@@ -440,7 +445,8 @@ footer span.pull-right a {
 }
 
 footer span.pull-right a:hover {
-	border-bottom:1px solid #bdbdbd;
+	/*border-bottom:1px solid #bdbdbd;*/
+	font-weight:bold;
 }
 
 /*Sticky footer*/
