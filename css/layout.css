@@ -416,7 +416,7 @@ footer {
 }
 
 .footer-wrap {
-	margin-right: 60px;
+	margin-right: 60px !important;
 	border-top:1px solid #bdbdbd;
 }
 
