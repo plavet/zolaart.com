@@ -52,8 +52,8 @@ src: url('../fonts/a-t-m-b-2.ttf'),
 @font-face
 {
 font-family: text;
-src: url('../fonts/a-t-m-b-2.ttf'),
-     url('../fonts/a-t-m-b-2.eot') format("opentype"); /* IE */
+src: url('../fonts/a-t-bold-b-2.ttf'),
+     url('../fonts/a-t-bold-b-2.eot') format("opentype"); /* IE */
      font-weight:bold;
 }
 
@@ -121,6 +121,7 @@ ul.navigacija li a {
 
 ul.navigacija li a:hover {
 	border-bottom:2px solid #4d484f;
+	font-weight:bold;font-size: 24px;
 }
 
 a.current {
