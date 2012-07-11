@@ -1,5 +1,22 @@
   $(document).ready(function(){
-$(document).ready(function(){
+
+	$("#contact .button").click(function() {
+	     var name = $("#form_name").val();     
+	     var email = $("#form_email").val();     
+	     var text = $("#msg_text").val();     
+	     var dataString = 'name='+ name + '&email=' + email + '&text=' + text;      
+
+	     $.ajax({     
+	     	type: "POST",     
+	     	url: "../send.php",     
+	     	data: dataString,     
+	     	success: function(){       
+	     		$('.success').fadeIn(1000).delay(1000).fadeOut(3000);     
+	     	}     
+	     });      
+	     return false;  
+	 });
+
 		$("a[rel^='loadedPage']").loadedPage({
 			animation_speed: 'fast', /* fast/slow/normal */
 			slideshow: 5000, /* false OR interval time in ms */
@@ -79,5 +96,4 @@ $(document).ready(function(){
 			custom_markup: '',
 			social_tools: false /* html or false to disable */
 		});
-	});
-  });
+});

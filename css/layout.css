@@ -99,7 +99,7 @@ h2.slogan {
 /*MAIN NAV*/
 
 nav {
-	text-align:left;
+	text-align:center;
 	clear:both;
 }
 
@@ -170,7 +170,7 @@ ul.sub-nav li a:hover {
 
 /*index*/
 section.index {
-	margin: 0 0 70px -160px;
+	margin: 0 0 70px -135px;
 	width: 930px;
 }
 
@@ -258,7 +258,7 @@ section.statement p {
 /*contact*/
 section.contact{
 	margin: 0 0 70px 0;
-	width: 590px;
+	/*width: 590px;*/
 }
 section.contact p {
 	padding: 10px 0 30px 0;
@@ -287,7 +287,7 @@ section.contact p a:hover {
 /*work*/
 #section-wrap {
 	float: left;
-	margin: 0 0 70px -160px;
+	margin: 0 0 70px -110px;
 	width: 930px;
 }
 .ff-container{
@@ -369,7 +369,7 @@ span.separator {
 }
 .ff-items{
 	position: relative;
-	margin: 0 0 0 20px;
+	/*margin: 0 0 0 20px;*/
 	padding-top: 70px;
 }
 
@@ -453,7 +453,7 @@ footer {
 }
 
 .footer-wrap {
-	margin-right: 60px !important;
+	/*margin-right: 60px !important;*/
 	border-top:1px solid #bdbdbd;
 }
 
@@ -526,4 +526,33 @@ div.ppt {
 }
 div.pp_default .pp_description {
 	font-size: 16px;
+}
+
+/*AUX*/
+#form_email {
+	font-size: 24px;
+}
+
+#contact fieldset {
+	float:left;
+}
+
+input.button {
+	color: #8D8D8F;
+	border: 1px solid #ADADAD;
+	margin: 0 0 2px 5px;
+	font-style: normal;
+	float: left;
+	font-size: 24px;
+	padding: 2px 5px 0px 2px;
+	cursor: pointer;
+}
+
+span.success {
+	background-color: #FFFFE1;
+	margin: 0px 0 0 60px;
+	font-size: 24px;
+	color: green;
+	padding: 5px 10px 5px 10px;
+	float: left;
 }

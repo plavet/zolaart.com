@@ -1,3 +1,5 @@
-/*hackovi svedeni na minimin sa 40 na 2 reda koda*/
-#main {margin-left:150px !important;}
-.ff-items{margin: 0 0 0 30px;}
+/*hackovi svedeni na minimin sa 40 na 4 reda koda*/
+#main {margin-left:210px !important;}
+nav {text-align: left;}
+/*nav ul.navigacija {margin-left: 30px;}*/
+#section-wrap {margin: 0 0 70px -90px;}
