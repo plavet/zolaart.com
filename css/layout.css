@@ -201,6 +201,7 @@ section.upcoming {
 	margin: 0 0 70px -160px;
 	width: 930px;
 	font-size:22px;
+	float: left;
 }
 
 section.upcoming article h1 {
@@ -529,7 +530,7 @@ div.pp_default .pp_description {
 }
 
 /*AUX*/
-#form_email {
+.email {
 	font-size: 24px;
 }
 
@@ -538,21 +539,51 @@ div.pp_default .pp_description {
 }
 
 input.button {
+	font-weight: bold;
+	font-family: text;
+	background: none;
 	color: #8D8D8F;
-	border: 1px solid #ADADAD;
+	border: none;
 	margin: 0 0 2px 5px;
 	font-style: normal;
 	float: left;
-	font-size: 24px;
-	padding: 2px 5px 0px 2px;
+	font-size: 28px;
+	padding: 0 5px 0px 10px;
 	cursor: pointer;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+input.button:hover {
+	color: #4d484f;
 }
 
 span.success {
-	background-color: #FFFFE1;
-	margin: 0px 0 0 60px;
+	display: block;
+	background-color: #FDFDEA;
+	text-align: center;
+	margin: 0 auto;
 	font-size: 24px;
-	color: green;
 	padding: 5px 10px 5px 10px;
+}
+
+form#contact {
+	margin: 0 auto;
+	width: 360px;
+	position:relative;
+}
+
+label.error {
+	color: red;
+	margin: 0px 0px 0px 10px;
+	font-size: 18px;
+	left: 0;
+	/*width: 200px;*/
+	top: 40px;
+	position: absolute;
+}
+img.wrap-txt-right {
 	float: left;
+	margin: 10px 20px 20px 0;
 }

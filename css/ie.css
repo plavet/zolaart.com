@@ -1,5 +1,17 @@
-/*hackovi svedeni na minimin sa 40 na 4 reda koda*/
 #main {margin-left:210px !important;}
+#main.contact-page {margin-left:0px !important;}
 nav {text-align: left;}
 /*nav ul.navigacija {margin-left: 30px;}*/
 #section-wrap {margin: 0 0 70px -90px;}
+form#contact {
+	margin: 0 0 0 120px;
+	width:380px;
+}
+ul.slike {
+margin: 0;
+padding: 0 0 60px 120px;
+}
+
+.work-page nav {
+margin-left: 20px;
+}

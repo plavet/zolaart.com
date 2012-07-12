@@ -1,3 +1,13 @@
+<?php 
+if($_POST){    
+    
+	$email=Trim(stripslashes($_POST['req-email'])); 
+	//send email    
+	mail("arpad@verat.net", "Zolaart new subscriber",    
+		"Subscriber email: " . $email); 
+} 
+?>
+
 <!doctype html>
 <html lang="en-US">
 <html>
@@ -12,12 +22,17 @@
 
     <meta name="keywords" content=""/>
 
-<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/layout.css">
+	
 	<script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
-	<script src="js/jquery.prettyPhoto.js" type="text/javascript" ></script>
-	<script src="js/jquery.form.js" type="text/javascript" ></script>
 	<script src="js/jquery.validate.js" type="text/javascript" ></script>
+	<script src="js/jquery.form.js" type="text/javascript" ></script>
 	<script src="js/zolaart.js" type="text/javascript" ></script>
+<!--[if IE]>
+
+	<link rel="stylesheet" href="css/ie.css">
+
+<![endif]-->
 <!--[if !IE 7]>
 
 	<style type="text/css">
@@ -34,7 +49,7 @@
 
 	<div id="wrap">
 
-		<div id="main">
+		<div id="main" class="contact-page">
 
 		<header>
 
@@ -56,7 +71,7 @@
 
 				<li><a href="http://www.etsy.com/shop/littleZola" title="Shop" target="_blank">Shop</a>|</li>
 
-				<li><a href="contact.html" class="current" title="Contact">Contact</a></li>
+				<li><a href="#" class="current" title="Contact">Contact</a></li>
 
 			</ul>
 
@@ -95,13 +110,17 @@
 			Subscribe to receive occasional news and updates by email. Your email will not be shared with anybody else.
 			</p>
 
-			<form id="contact" method="post">   
+			<form action="contact.php" id="contact" method="post">   
 				<fieldset>     
-					<div>       
-						<input name="form_email" class="required" id="form_email" type="text" placeholder="Your Email">       
+					<div class="rowElem">
+					<label for="req-email"></label>       
+						<input name="req-email" class="required email" type="text">       
 					</div>     
-				</fieldset>   
-				<input type="submit" value="Send" name="submit" class="button"> 
+				</fieldset>
+				<div class="rowElem">
+		  		<label></label>   
+				<input type="submit" value="Send" class="button">
+        		</div> 
 			</form> 
 			<span class="success" style="display:none;">Thank you.</span>			
 
